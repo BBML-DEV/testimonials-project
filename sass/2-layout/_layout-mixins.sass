@@ -1,0 +1,29 @@
+@use '../1-base/_variables'
+
+
+@mixin card-white
+    background-color: variables.$white-color
+
+    .card__header
+        img
+            border: none
+
+        &--info
+            h3  
+                
+                color: variables.$very-dark-grayish-blue
+                
+            small
+                color: variables.$very-dark-grayish-blue
+
+    .card__body
+
+        h4
+            padding-top: 2rem
+            color: variables.$very-dark-grayish-blue
+    
+
+        p
+            padding-top: 2rem
+            color: variables.$very-dark-grayish-blue
+   

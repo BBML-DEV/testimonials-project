@@ -1,0 +1,32 @@
+@use '../1-base/_variables'
+
+.card
+    background-color: purple
+    border-radius: 10px
+    padding: 2rem
+    display: flex
+    flex-direction: column
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09)
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09)
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09)
+
+    &__header
+        display: flex
+        align-items: center
+
+        &--image
+            margin-right: 1rem
+
+            img
+                border-radius: 60px
+                border: 1px solid black
+
+    &__body
+        display: flex
+        align-items: center
+        flex-direction: column
+
+        h4
+            padding: 1rem 0 1rem 0
+
+
