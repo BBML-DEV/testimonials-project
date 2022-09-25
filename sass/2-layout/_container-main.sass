@@ -1,0 +1,35 @@
+@use '../1-base/variables'
+
+.container
+    width: variables.$container-witdh
+    display: grid
+    grid-template-columns:  25% 25% 25% 25%
+    grid-template-rows: 1fr 1fr 
+    grid-gap: 1rem
+    margin: 150px auto
+    background-color: red
+
+    .card__primary
+        background-color: yellow
+        grid-column: 1 / 3
+        grid-row: 1 / 1
+        
+    .card__secondary
+        background-color: green
+        grid-column: 3 / 3
+        grid-row: 1 / 1
+
+    .card__third
+        background-color: blue
+        grid-column: 4 / 4 
+        grid-row: 1 / 3
+
+    .card__fourth
+        background-color: pink
+        grid-column: 1 / 1
+        grid-row: 2 / 2
+
+    .card__fifth
+        background-color: black
+        grid-column: 2 / 4
+        grid-row: 2 / 2
