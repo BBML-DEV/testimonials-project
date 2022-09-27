@@ -1,5 +1,6 @@
 @use '../1-base/variables'
 @use 'layout-mixins'
+@use '../1-base/_base-mixins'
 
 .container
     width: variables.$container-witdh
@@ -8,6 +9,11 @@
     grid-template-rows: 1fr 1fr 
     grid-gap: 1rem
     margin: 150px auto
+    @include base-mixins.mobile
+        display: flex
+        flex-direction: column
+        width: 80%
+    
 
     .card__primary
         grid-column: 1 / 3
